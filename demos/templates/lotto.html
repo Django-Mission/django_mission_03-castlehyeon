@@ -1,0 +1,15 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>로또 번호 추출기</h1>
+        <form name = lotto action="{% url 'result' %}">
+            로또 번호를 받아보세요!
+            <input type="submit" value ="로또 번호 추출하기" >
+            <br/>
+            로또번호 : {{lottonumber}}
+            <br>
+            <a href="{% url 'home' %}">메인으로 돌아가기</a>
+    </body>
+</html>
